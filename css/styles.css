@@ -155,30 +155,72 @@ img {
 
 /* Sobre Tech PRO */
 .sobre-tech {
+  background-position: right;
+  background-repeat: repeat, no-repeat;
+  background-size: 100%, 110rem;
+}
+
+.notavif.notwebp .sobre-tech {
   background-image: linear-gradient(
       to bottom,
       transparent 50%,
       var(--primario) 0%
     ),
     url(../img/imagen-mujer.jpg);
-  background-position: right;
-  background-repeat: repeat, no-repeat;
-  background-size: 100%, 110rem;
 }
-@media (min-width: 1600px) {
-  .sobre-tech {
-    background-size: 100%, 210rem;
-  }
+
+.webp .sobre-tech {
+  background-image: linear-gradient(
+      to bottom,
+      transparent 50%,
+      var(--primario) 0%
+    ),
+    url(../img/imagen-mujer.webp);
 }
+
+.avif .sobre-tech {
+  background-image: linear-gradient(
+      to bottom,
+      transparent 50%,
+      var(--primario) 0%
+    ),
+    url(../img/imagen-mujer.avif);
+}
+
 @media (min-width: 768px) {
   .sobre-tech {
+    background-repeat: repeat, no-repeat;
+  }
+
+  .notavif.notwebp .sobre-tech {
     background-image: linear-gradient(
         to left,
         transparent 50%,
         var(--primario) 0%
       ),
       url(../img/imagen-mujer.jpg);
-    background-repeat: repeat, no-repeat;
+  }
+  .webp .sobre-tech {
+    background-image: linear-gradient(
+        to left,
+        transparent 50%,
+        var(--primario) 0%
+      ),
+      url(../img/imagen-mujer.webp);
+  }
+  .avif .sobre-tech {
+    background-image: linear-gradient(
+        to left,
+        transparent 50%,
+        var(--primario) 0%
+      ),
+      url(../img/imagen-mujer.avif);
+  }
+}
+
+@media (min-width: 1600px) {
+  .sobre-tech {
+    background-size: 100%, 210rem;
   }
 }
 
@@ -311,32 +353,75 @@ img {
 }
 /* Newsletter*/
 .newsletter {
-  background-image: linear-gradient(to bottom, transparent 50%, var(--blanco) 0%),
-    url(../img/newsletter.jpg);
   background-position: top center;
   background-repeat: no-repeat;
   background-size: 100%, 70rem;
-
 }
 
-@media (min-width: 768px ){ 
-  .newsletter{
-    background-image: linear-gradient(to right, transparent 50%, var(--blanco) 0%),
+.notavif.notwebp .newsletter {
+  background-image: linear-gradient(
+      to bottom,
+      transparent 50%,
+      var(--blanco) 0%
+    ),
     url(../img/newsletter.jpg);
-    background-position: center , -21rem 0rem;
+}
+
+.webp .newsletter {
+  background-image: linear-gradient(
+      to bottom,
+      transparent 50%,
+      var(--blanco) 0%
+    ),
+    url(../img/newsletter.webp);
+}
+.avif .newsletter {
+  background-image: linear-gradient(
+      to bottom,
+      transparent 50%,
+      var(--blanco) 0%
+    ),
+    url(../img/newsletter.avif);
+}
+@media (min-width: 768px) {
+  .newsletter {
+    background-position: center, -21rem 0rem;
     background-size: 100%, 100rem;
     padding: 10rem 0;
   }
-  
+
+  .notavif.notwebp .newsletter {
+    background-image: linear-gradient(
+        to right,
+        transparent 50%,
+        var(--blanco) 0%
+      ),
+      url(../img/newsletter.jpg);
+  }
+  .webp .newsletter {
+    background-image: linear-gradient(
+        to right,
+        transparent 50%,
+        var(--blanco) 0%
+      ),
+      url(../img/newsletter.webp);
+  }
+
+  .avif .newsletter {
+    background-image: linear-gradient(
+        to right,
+        transparent 50%,
+        var(--blanco) 0%
+      ),
+      url(../img/newsletter.avif);
+  }
 }
 
-@media (min-width: 2200px ){ 
-  .newsletter{
+@media (min-width: 2200px) {
+  .newsletter {
     background-size: 100%, 200rem;
     background-position: center, 0 -30rem;
-
   }
-  
 }
 
 .contenido-newsletter {
@@ -345,31 +430,26 @@ img {
   gap: var(--separacion);
 }
 
-@media (min-width: 768px ){ 
-  .contenido-newsletter{
+@media (min-width: 768px) {
+  .contenido-newsletter {
     grid-template-rows: unset;
-    grid-template-columns: repeat(2,1fr);
-
+    grid-template-columns: repeat(2, 1fr);
   }
-  
 }
 
 .texto-newsletter {
   grid-row: 2/3;
 }
-@media (min-width: 768px ){ 
+@media (min-width: 768px) {
   .texto-newsletter {
     grid-row: unset;
     grid-column: 2/3;
-
   }
-  
 }
 
 .formulario input[type="text"] {
   width: 100%;
   padding: 1rem;
-
 }
 
 .formulario input[type="submit"] {
@@ -381,4 +461,13 @@ img {
   font-size: 2rem;
   font-weight: 900;
   border: none;
+}
+
+.footer p {
+  text-align: center;
+  font-family: var(--fuenteSecundaria);
+  text-transform: uppercase;
+  font-size: 2rem;
+  color: var(--primario);
+  padding: 2rem 0;
 }
